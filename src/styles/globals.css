@@ -1,15 +1,22 @@
 :root {
   --background: #F5F5F5;
   --header: #FFFFFF;
+  --panel: #FFFFFF;
   --box-width: 1024px;
   --forecolor: #232323;
+  --light-forecolor: #525252;
   --border: 1px solid #DDDDDD;
+  --child: rgb(234, 255, 250);
+  --child-border: rgb(162, 221, 207);
+  --child-text: rgb(74, 114, 105);
+  --primary: rgb(15, 182, 132);
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html,
@@ -31,11 +38,24 @@ header {
   border-radius: 20px;
   display: flex;
   align-items: center;
+  padding: 0 20px;
+}
+
+header button{
+  width: 120px;
+  height: 40px;
+  border: 0;
+  border-radius: 30px;
+  background-color: var(--primary);
+  font-size: 14px;
+  cursor: pointer;
 }
 
 section {
   max-width: var(--box-width);
   width: 95%;
+  display: flex;
+  gap: 20px;
 }
 
 a {
